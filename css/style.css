@@ -1,0 +1,200 @@
+@font-face {
+    font-family: 'bird-house-script';
+    src: url('../fonts/bird-house-script/Bird\ House.otf');
+}
+
+
+
+* {font-family: 'Nunito', sans-serif; color: #000; box-sizing: border-box;}
+
+a {text-decoration: none;}
+.navbar {
+    width: 98%;
+    margin: auto;
+    box-shadow: 0px 6px 20px #aaa;
+    position: relative;
+    top: 0;
+    z-index: 8;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    
+    margin: 0;
+    background: url('../images/container.jpg') 50% 50%;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#facebook:hover { background-color: #ff4701;transition: all .5s;}
+#twitter:hover { background-color: #ff4701;transition: all .5s;}
+#instagram:hover { background-color: #ff4701;transition: all .5s;}
+#linkedin:hover { background-color: #ff4701;transition: all .5s;}
+
+#navbar-menu {
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 4;
+}
+
+#bg-load {
+    background-color: #313a56;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 9;
+}
+
+#logo_img_hold {
+    top: 40%;
+}
+
+.square-boxes {
+    width: 90%;
+    margin: auto;
+    border: 0px solid tan;
+    position: relative;
+    z-index: 1;
+}
+
+.square-boxes-list {
+    margin: auto;
+    border: 0px solid tan;
+    position: relative;
+    z-index: 1;
+    flex: 23%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.i {
+    flex: 60%;
+}
+
+.ii {
+    flex: 30%;
+}
+
+#horizontal-bar {
+    border-right: 6px solid #313a56; position: fixed; left: 12%; z-index: 0; bottom: 0; top: 0;
+}
+
+#first-text {
+    width: 83.7%;
+    margin: auto;
+    background-image: linear-gradient(to bottom right, #313a56, #e7edff);
+    height: auto;
+    border-radius: 8px;
+    margin-top: 2em;
+    position: relative;
+    padding: 2%;
+    padding-bottom: 0px;
+}
+
+#messenger {
+    width: 65%;
+    margin: auto;
+    position: relative;
+    border: 5px solid #313a56;
+    padding: 10%;
+    border-radius: 8px;
+}
+
+#td-navbar-logo {
+    width: 50%;
+}
+#td-navbar-function {
+    width: 20%; border: 0px solid red; vertical-align: middle; font-size: 16px; font-weight: 900;
+}
+
+#td-navbar-bookings {
+    width: 30%; border: 0px solid red; vertical-align: middle; font-size: 16px; text-align: right;
+}
+
+#td-navbar-bookings > button { font-size: 13px; padding: 6px;}
+
+#header-text {
+    width: 80%; padding-left: 10px; border: 0px solid red; position: relative; left: 15%; background-color: #fff; 
+     background-size: contain; background-repeat: no-repeat; background-position: center;
+}
+
+.fa-bars { font-size: 16px;}
+
+.full-screen {
+    background-color: #1D4851;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background-image: url("../images/farewell-to-the-asd-tug-2810-top.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+
+#property_type_open {
+    position: fixed;
+    z-index: 3;
+    top: 10%;
+    width: 22em;
+    height: fit-content;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px #000;
+    background-color: #fff;
+
+    left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+#fafacheck {
+    display: none;
+    color: green;
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    border: .1em solid green;
+    font-size: 3em;
+    padding: .2em;
+    border-radius: 50%;
+}
+
+.loader {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+	z-index: 4;
+    display: none;
+	border: 7px solid #fc8e56; /* Light grey */
+	border-top: 7px solid #42506b; /* Blue */
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

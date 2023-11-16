@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Law - site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" />
+
+    <link href="./fontawesome/css/all.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="./js/Chart.min.js"></script>
+    <script src="./js/jquery-3.6.2.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/admin.js"></script>
+
+    <style>
+        input {outline: none;}
+    </style>
+</head>
+
+<body>
+    <!--
+        #5568fe
+        #313a56
+        #e7edff
+        #f8f1ff
+
+    <div id="bg-load">
+        <div id="logo_img_hold" style="width: 70%; margin: auto; position: relative;">
+            <center><img id="img-load" src="./images/logo.jpg" style="width: 50%; margin: auto; border-radius: 8px;" alt="" /></center>
+        </div>
+    </div>-->
+
+    <div id="horizontal-bar"></div>
+
+    <div id="navbar-menu">
+        <div id="horizontal-bar"></div>
+        <div style="width: 80%; padding-left: 10px; border: 0px solid red; position: relative; left: 15%; background-color: #fff;">
+            <br /><br />
+            <table style="width: 100%; margin: auto; color: #000;">
+                <tr>
+                    <td style="width: 70%; text-align: left; color: #000; font-size: 1.2em;">
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> Home<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> About Us<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> Property Sales<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> Estate Management<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> Contact<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> Cookie Policy<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001; font-size: 1em;"></i> Privacy Policy<br />
+
+                        <button id="navbar-menu-booking" style="padding: 10px; border: none; border-radius: 8px; background-color: #5568fe; color: #fff; margin-top: 3em;">Book Viewing</button>
+                    </td>
+
+                    <td style="width: 50%; text-align: left; color: #000;">
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    
+    <div class="navbar">
+        <table style="width: 100%; margin: auto;">
+            <tr>
+                <td id="td-navbar-logo" style="border: 0px solid red; vertical-align: middle; font-size: 20px;"><img src="./images/logo.jpg" style="width: 5em; height: auto;" /></td>
+                <td id="td-navbar-function"><i class="fa fa-bars" onclick="open_menu();" style="font-size: 16px"></i> Menu</td>
+                <td id="td-navbar-bookings"><button style="border: none; border-radius: 8px; background-color: #5568fe; color: #fff; margin-right: 1em;">Book Viewing</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="header-text">
+        <br /><br />
+        <h1>UPLOAD LISTINGS</h1>
+        <p style="color: #000;">Lorem ipsum dolor sit amet consectetur adipisicing elit. A totam amet architecto suscipit.</p>
+        <hr />
+        <br />
+    </div>
+
+    <br />
+    
+    <div style="display: flex; flex-wrap: wrap; width: 90%; margin: auto;">
+        <div class="square-boxes-list" style="height: fit-content; border: 2px solid #aaa; border-radius: 8px; box-shadow: 1px 1px 20px #000; margin-bottom: 3em;">
+            <div id='sbl_content'></div>
+            <form id="file" method="post" name="file"><div id="upload_file_container" style="margin-left: 5%; width: fit-content; background-image: linear-gradient(to bottom right, #313a56, #e7edff); ; padding: 15px; border-radius: 8px; margin-top: 15px; margin-bottom: 15px;"><input type="file" id="upload_file" /><span class="fa fa-plus" style="font-size: larger; font-weight: 900;" onclick="add_image();"></span></div></form>
+        </div>
+
+        <form method="post" action="/upload">
+        <div class="square-boxes-list" style="height: fit-content; border: 2px solid #aaa; border-radius: 8px; box-shadow: 1px 1px 20px #000; margin-bottom: 3em;">
+            <input style="outline: none; margin-left: 5%; width: 80%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Street" name="street"/>
+            <input style="outline: none; margin-left: 5%; width: 80%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Area" name="area"/>
+            <input style="outline: none; margin-left: 5%; width: 80%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="State" name="state"/>
+            <input style="outline: none; margin-left: 5%; width: 80%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" id="img_list" name="img_list" type="hidden" />
+            <input style="outline: none; margin-left: 5%; width: 37%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Price" name="price"/>
+            <input style="outline: none; margin-left: 5%; width: 37%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Property type" id="property_type" onclick="property_type_open()" name="property_type" />
+            <input style="outline: none; margin-left: 5%; width: 37%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Bedroom" name="bedroom"/>
+            <input style="outline: none; margin-left: 5%; width: 37%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Bathroom" name="bathroom"/>
+            <input style="outline: none; margin-left: 5%; width: 37%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Toilet" name="toilet"/>
+            <input style="outline: none; margin-left: 5%; width: 37%; border: 3px solid #313a56; ; padding: 5px 10px; border-radius: 8px; margin-top: 15px; font-size: medium;" placeholder="Parking" name="parking"/>
+            <br />
+            <button style="margin-left: 5%; margin-top: 15px; padding: 8px 16px; font-weight: 700; font-size: medium; background-color: #5568fe; border: none; color: #f8f1ff; border-radius: 8px; margin-bottom: 15px;">Submit</button>
+        </div>
+        </form>
+    </div>
+    
+    <div id="property_type_open">
+        <p style="margin-right: 15px; text-align: right; float: right;" class="fa fa-times" onclick="property_type_close()"></p>
+        <br />
+        <h3 style="text-align: center;">Property Type</h3>
+        <div style="width: 60%; margin: auto; border-top: 1px solid #313a56;"></div>
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Detached Bungalows" onclick="property_type_close()"/><span style="">Detached Bungalows</span><br />
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Semi-detached Bungalows" onclick="property_type_close()"/><span style="">Semi-detached Bungalows</span><br />
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Terraced Bungalows" onclick="property_type_close()"/><span style="">Terraced Bungalows</span><br />
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Detached Duplexes" onclick="property_type_close()"/><span style="">Detached Duplexes</span><br />
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Semi-detached Duplexes" onclick="property_type_close()"/><span style="">Semi-detached Duplexes</span><br />
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Terraced Duplexes" onclick="property_type_close()"/><span style="">Terraced Duplexes</span><br />
+        
+        <input type="radio" name="p_type" style="margin-top: 15px; margin-left: 30px;" value="Block of flats" onclick="property_type_close()"/><span style="">Block of flats</span><br />
+        <br />
+        <br />
+    </div>
+
+    <br /><br />
+    </div>
+    
+
+    <div id="ceo-desk">
+        <div style="width: 87.3%; height: auto; margin: auto; position: relative;"><img src="./images/skyline.jpg" style="width: 100%; height: auto; border-radius: 8px;" /></div>
+
+    
+        <div style="width: 80%; height: fit-content; margin: auto; box-shadow: 0px 6px 12px #000; position: relative; top: -80px; margin-bottom: 50px; text-align: center; color: #f8f1ff;">
+            <br />
+            <h3 style="color: #fff;">FROM THE DESK OF THE CEO</h3>
+            <br />
+            <p style="width: 80%; margin: auto; text-align: left; font-family: 'bird-house-script', sans-serif; font-size: 3em; line-height: .55em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti dolor ullam fugit fuga, odio eos exercitationem odit est dolorum nemo quisquam mollitia, accusantium unde provident, dicta at quae nihil.</p>
+            <br />
+            <p style="width: 80%; margin: auto; text-align: left; font-family: 'bird-house-script', sans-serif; font-size: 3em; line-height: .55em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti dolor ullam fugit fuga, odio eos exercitationem odit est dolorum nemo quisquam mollitia, accusantium unde provident, dicta at quae nihil.</p>
+            <br />
+            <p style="width: 80%; margin: auto; text-align: left; font-family: 'bird-house-script', sans-serif; font-size: 3em; line-height: .55em;">Yours sincerely,</p>
+            <p style="width: 80%; margin: auto; text-align: left; font-family: 'bird-house-script', sans-serif; font-size: 3em; line-height: .55em;">Adriel.</p>
+            <br />
+        </div>
+    </div>
+    
+
+    
+    <div id="messenger">
+        <input type="text" style="width: 95%; padding: 2.5%; font-size: 1.1em; border: 1px solid#9ab5bc; border-radius: 4px; margin-bottom: 15px;" placeholder="Full Name"/>
+        <input type="email" style="width: 95%; padding: 2.5%; font-size: 1.1em; border: 1px solid#9ab5bc; border-radius: 4px; margin-bottom: 15px;" placeholder="Email"/>
+        <input type="text" style="width: 95%; padding: 2.5%; font-size: 1.1em; border: 1px solid#9ab5bc; border-radius: 4px; margin-bottom: 15px;" placeholder="Subject"/>
+        <textarea style="width: 95%; height: 150px; padding: 2.5%; font-size: 1.1em; border: 1px solid#9ab5bc; border-radius: 4px; margin-bottom: 15px;" placeholder="Message"></textarea>
+        <button style="background-color: #ff9001; height: fit-content; width: fit-content; border: none; border-radius: 4px; color: #fff; margin: auto;">
+            <p style="line-height: 0; padding: 4px; text-align: center; font-size: 1.2em;">Send Message</p>
+        </button>
+    </div>
+    <br /><br />
+    <br /><br />
+
+    <div style="width: 100%; height: fit-content; background-image: linear-gradient(#fff, #313a56);">
+        <div style="width: 80%; padding-left: 10px; border: 0px solid red; position: relative; left: 15%; color: #fff;">
+            <table style="width: 100%; margin: auto;">
+                <tr>
+                    <td style="width: 50%;"><img src="./images/logo.jpg" style="width: 7.5em; margin-top: 2em; margin-bottom: 2em; border-radius: 8px;"/></td>
+                    <td style="width: 50%;"></td>
+                </tr>
+
+                <tr>
+                    <th style="width: 50%; text-align: left"><h4 style="color: #313a56;">QUICK LINKS</h4></th>
+                    <th class="contact-table" style="width: 50%; text-align: left"><h4 style="color: #313a56;">CONTACT US</h4></th>
+                </tr>
+
+                <tr>
+                    <td style="width: 50%; text-align: left; color: #fff;">
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> Home<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> About Us<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> News<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> Cookie Policy<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> Privacy Policy
+                    </td>
+
+                    <td class="contact-table" style="width: 50%; text-align: left; color: #fff;">
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> 3290 Freshour Circle, San Antonio, Texas<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> +234 (0) 903 xxx xxx<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> freiheit@mail.com<br />
+                        <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> Monday - Friday: 8:00 - 19:00<br />
+                    </td>
+                </tr>
+            </table>
+            <br /><br />
+            <div class="contact" style="color: #fff;">
+            <h4 style="color: #313a56;">CONTACT US</h4>
+            <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> 3290 Freshour Circle, San Antonio, Texas<br />
+            <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> +234 (0) 903 xxx xxx<br />
+            <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> gfncapital@mail.com<br />
+            <i class="fa fa-chevron-right" style="font-weight: 100; margin-top: 1em; color: #ff9001;"></i> Monday - Friday: 8:00 - 19:00<br />
+            <br /><br /></div>
+
+            <i id="facebook" class="fa fa-facebook" style="border: 3px solid #ff4701; border-radius: 50%; width: 40px; height: 27px; text-align: center; padding-top: 13px; color: #fff; margin-right: 10px;"></i>
+            <i id="twitter" class="fa fa-twitter" style="border: 3px solid #ff4701; border-radius: 50%; width: 40px; height: 27px; text-align: center; padding-top: 13px; color: #fff; margin-right: 10px;"></i>
+            <i id="instagram" class="fa fa-instagram" style="border: 3px solid #ff4701; border-radius: 50%; width: 40px; height: 27px; text-align: center; padding-top: 13px; color: #fff; margin-right: 10px;"></i>
+            <i id="linkedin" class="fa fa-linkedin" style="border: 3px solid #ff4701; border-radius: 50%; width: 40px; height: 27px; text-align: center; padding-top: 13px; color: #fff; margin-right: 10px;"></i>
+            
+            <br /><br />
+            <p id="cpright" style="color: #e7edff"></p>
+            <script>const d = new Date; let year = d.getFullYear(); document.getElementById('cpright').innerHTML = '&copy '+year;</script>
+        </div>
+        <br /><br />
+    </div>
+    <div style="display: none;" class="loader"></div>
+
+</body>
+</html>

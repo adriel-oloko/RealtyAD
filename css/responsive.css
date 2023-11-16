@@ -1,0 +1,165 @@
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+    .square-boxes-list, .ii {flex: 100%;}
+}
+
+@media only screen and (max-width: 767px) {
+    .desktop-box {display: none;}
+    .desktop-ii {display: none;}
+}
+
+
+@media only screen and (max-width: 600px) {
+    #e404 { width: 100%;}
+
+}
+
+
+@media only screen and (max-width: 560px) {
+    
+}
+
+@media only screen and (max-width: 540px) {
+    
+}
+
+@media only screen and (max-width: 512px) {    
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-table { display: none;}
+}
+
+@media only screen and (max-width: 400px) {
+    #td-navbar-bookings { display: none;}
+    #td-navbar-function { margin-right: 4em; }
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+
+
+@media only screen and (min-width: 400px) {
+    #navbar-menu-booking {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    .main { width: 80%;}
+    #messenger { width: 52%; padding: 8%; margin: auto;}
+    #td-navbar-logo { width: 50%; }
+}
+
+@media only screen and (min-width: 560px) {
+    
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    #horizontal-bar {
+        left: 7%;
+    }
+
+    #header-text {
+        text-align: center;
+        margin: auto;
+        padding: 0;
+        position: initial;
+    }
+
+    #header-text > h1 {
+        font-size: 75px;
+        text-align: center;
+    }
+
+    #header-text > p {
+        font-size: 26px;
+        width: 70%;
+        margin: auto;
+        font-weight: 500;
+        margin-top: 1em;
+    }
+
+    #ceo-desk {
+        width: 70%;
+        margin: auto;
+        margin-top: 2em;
+    }
+
+    /*#square-boxes {
+        width: 50%;
+        margin-left: 30px;
+        border: 1px solid tan;
+    }
+
+    #first-text {
+        width: 28.5%;
+        margin-left: 30px;
+    }*/
+    .main {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    #messenger { width: 30%; padding: 5%; }
+    
+    #e404 { width: 50%;}
+
+    #td-navbar-bookings { font-size: 20px; border: 0px solid red; }
+    #td-navbar-function { font-size: 23px; border: 0px solid red; text-align: right;}
+    #td-navbar-bookings > button { font-size: 20px; padding: 8px;}
+    .fa-bars {font-size: 23px;}
+
+    .mobile-box {display: none;}
+    .main{display: none;}
+    .desktop-box { width: 80%;}
+}
+
+@media only screen and (min-width: 800px) {
+    #td-navbar-logo { width: 50%; }
+    #td-navbar-bookings { width: 25%;}
+    #td-navbar-function { width: 25%;}
+}
+
+@media only screen and (min-width: 1024px) {
+    #messenger { width: 20%; padding: 1%; margin: auto;}
+    #td-navbar-bookings { width: 20%;}
+    #td-navbar-function { width: 30%;}
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+
+
+
+@media only screen and (min-width: 512px) {
+
+}
+
+@media only screen and (min-width: 480px) {
+    .contact {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 320px) {
+
+}
